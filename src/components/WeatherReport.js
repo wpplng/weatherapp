@@ -5,7 +5,7 @@ const WeatherReport = props => {
 		<div id="WeatherReport">
 			<div className="card bg-dark text-white">
 				<div className="card-body text-center">
-					<h5 className="card-title">The temperature in CITY is TEMP &deg; C right now, with a humidity of HUMIDITY %.</h5>
+					<h5 className="card-title">The temperature in {props.city} is {props.report.main.temp} &deg; C right now, with a humidity of {props.report.main.humidity} %.</h5>
 				</div>
 			</div>
 		</div>
@@ -13,3 +13,4 @@ const WeatherReport = props => {
 }
 
 export default WeatherReport;
+
