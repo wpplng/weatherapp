@@ -30,11 +30,12 @@ class App extends React.Component {
 			this.setState({
 				report: response.data,
 				city: this.state.inputCity,
-				inputCity: ""
+				inputCity: "",
+				errorMessage: false
 			})
 		})
 		.catch(err => {
-			console.error(err, 'the city doesnt exist')
+			// console.error(err, 'the city doesnt exist')
 			this.setState({
 				errorMessage: true
 			})
@@ -60,6 +61,7 @@ class App extends React.Component {
 						this.state.report
 						? (
 							<WeatherReport
+								errorMessage={this.state.errorMessage}
 								city={this.state.city}
 								report={this.state.report}
 							/>

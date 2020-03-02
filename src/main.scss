@@ -3,3 +3,9 @@ $body-color: #fefefe;
 
 @import "~bootstrap/scss/bootstrap";
 
+#WeatherReport {
+	h1 {
+		text-align: center;
+		font-size: 1rem;
+	}
+}
