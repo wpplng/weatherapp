@@ -8,7 +8,7 @@ class WeatherConditions extends React.Component {
 
 		return(
 			<div id="conditions">
-				<p>Current weather is: {conditions} </p>
+				<p>Current weather is: {conditions.join('& ')} </p>
 			</div>
 		)
 	}

@@ -9,7 +9,6 @@ class App extends React.Component {
 		report: null,
 		inputCity: "",
 		city: "",
-
 	}
 
 	handleChange = (e) => {
@@ -34,12 +33,12 @@ class App extends React.Component {
 			})
 		})
 		.catch(err => {
-			// console.error(err, 'the city doesnt exist')
 			this.setState({
-				errorMessage: true
+				city: this.state.inputCity,
+				inputCity: "",
+				errorMessage: true,
 			})
 		})
-
 	}
 
 	render() {
@@ -74,4 +73,3 @@ class App extends React.Component {
 }
 
 export default App;
-

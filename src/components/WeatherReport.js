@@ -13,7 +13,7 @@ const WeatherReport = props => {
 				</div>
 			)
 		:
-			<div className="alert alert-warning" role="alert">That city doesn't exist, please enter another city</div>
+			<div className="alert alert-warning" role="alert">The city "{props.city}" doesn't exist, please enter another city.</div>
 
 	return (
 		<div id="WeatherReport">
