@@ -26,7 +26,6 @@ class App extends React.Component {
 
 		axios.get(url)
 		.then(response => {
-			// console.log(response.data.weather[0].main)
 			this.setState({
 				report: response.data,
 				city: this.state.inputCity,
